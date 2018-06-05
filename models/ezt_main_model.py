@@ -17,3 +17,6 @@ class EztMainModel(object):
 
     def go_to_competition(self):
         return self.emp.competition_tab.click()
+
+    def is_register_create(self):
+        return self.emp.register_new.is_displayed()

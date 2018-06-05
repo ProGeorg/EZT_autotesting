@@ -19,3 +19,6 @@ class EztLoginModel(object):
         self.input_email(user.email)
         self.input_password(user.password)
         self.click_singin()
+
+    def input_password_for_new_user(self, user_password):
+        pass_fields = self.elp.get_password_fields()

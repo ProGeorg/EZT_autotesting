@@ -13,3 +13,7 @@ class EztMainPage(Page):
     @property
     def competition_tab(self):
         return self.wait_clickable_element_by_path('.//a[contains(@href, "competitions")]')
+
+    @property
+    def register_new(self):
+        return self.wait_clickable_element_by_path('.//a[contains(@href, "register")]')
